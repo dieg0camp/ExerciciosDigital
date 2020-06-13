@@ -24,11 +24,11 @@ public class ProgramaMedia {
             System.out.print("1. MASCULINO       2.FEMININO    0.SAIR \n\n");
             System.out.print("ESCOLHA:");
             int n = t.nextInt();
-            if (n == 0) {
-                System.out.println("Saindo ...");
-            } else {
+             switch (n) {
+                    case 0:
+                        System.out.println("Saindo 2"); // sem funcionar
 
-                switch (n) {
+                        break;
 
                     case 1:
                         System.out.println("Qual a sua altura?");
@@ -83,4 +83,3 @@ public class ProgramaMedia {
             System.out.println("Menor da turma: " + menor);
         }
     }
-}
